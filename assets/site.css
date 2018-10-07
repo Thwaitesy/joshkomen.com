@@ -142,7 +142,7 @@ body {
    left: 0;
    right: 0;
 
-   background-image : url('./img/bg.JPG'); 
+   background-image : url('./img/bg.jpg'); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
