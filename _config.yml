@@ -1,0 +1,6 @@
+title: Josh Komen
+baseurl: ""
+url: "https://joshkomen.com"
+
+# Build settings
+markdown: kramdown

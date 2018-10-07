@@ -1,0 +1,239 @@
+/* LAYOUT */
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+body {
+    padding-top: 56px;
+}
+
+#page-wrapper {
+	min-height:100%;
+    position:relative;
+    height: 100%;
+    background-color: #fdfdfd;
+}
+
+/* NAVBAR */
+.custom-navbar {
+    display: none;
+    background-color: transparent;
+    transition: background-color .5s ease 0s;
+}
+
+.custom-navbar.solid {
+    background-color:rgba(42, 59, 110, .98);
+    transition: background-color .5s ease 0s;
+}
+
+@media (max-width: 991px) {
+    .custom-navbar {
+        background-color:rgba(42, 59, 110, .98);
+        transition: background-color .5s ease 0s;
+    }
+}
+
+.details {
+    position: relative;
+    z-index: 300;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 300px;
+}
+
+.details .title {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.details .sub-title{
+    max-width: 550px;
+    font-size: 17px;
+    margin: 0 auto;
+    color:#fefefe;
+    padding: 7px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.details .links {
+    margin: 45px;
+}
+
+.details .links a{
+    font-size: 15px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 5px 0.5em;
+    width: 36px;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 100%;
+    color: #535358;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.details .links a:hover{
+    background: #535358;
+    color: #fff;
+    box-shadow: 0 0 1px 7px rgba(9, 36, 219, 0.15);
+}
+
+.details .links .description {
+    display: none;
+}
+
+.details  ul.links {
+    list-style: none;
+    padding: 0;
+}
+.details .links li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+@media (max-width: 767px) {
+    .details .title {
+        font-size: 25px;
+    }
+
+    .details .sub-title{
+        font-size: 15px;
+    }
+
+    .details{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+}
+
+.background-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.colour-overlay {
+    z-index: 200;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+    background-color:  rgba(0, 0, 0, 0.40);
+}
+
+.background {
+    z-index: 100;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   background-image : url(/assets/img/bg.JPG); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+}
+
+.background img {
+    left: 0px;
+    top: -80px;
+    width: 1900px;
+    position: relative
+}
+
+.home .navbar:not(.fixed-top) {
+    background: none;
+}
+
+.home {
+    padding-top: 0;
+    position: relative;
+    height: auto;
+    min-height: 100%;
+}
+
+.timeline .heading {
+    display: none;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.timeline {
+    
+    border: 1px solid #d7d7d7;
+    border-radius: 15px;
+    position: relative;
+    z-index: 100;
+    padding: 25px;
+    border: none;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        margin-top: 50px;
+        padding: 5px;
+    }
+}
+
+.timeline .row {
+    margin: 70px 50px;
+}
+
+.timeline .row .item {
+    padding-bottom: 30px;
+}
+
+.timeline .item.img img {
+    max-height: 350px;
+}
+
+.timeline .item.text {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .timeline .row {
+        margin: 30px 30px;
+    }
+
+    .timeline .row .item.text {
+        text-align: center;
+    }
+}
+
+
+.timeline .item.text .sub-heading {
+    text-transform: uppercase;
+    display: block;
+    font-size: 18px;
+    color: #bdbdbd;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+}
+
+.timeline .item.text .content {
+    font-size: 18px;
+}
