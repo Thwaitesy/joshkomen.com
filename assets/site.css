@@ -39,14 +39,14 @@ body {
 .details {
     position: relative;
     z-index: 300;
-    padding-top: 50px;
     text-align: center;
+    padding: 50px 0 250px 0;
 }
 
 .details .title {
     color: white;
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -56,8 +56,7 @@ body {
     font-size: 17px;
     margin: 0 auto;
     color:#fefefe;
-    padding: 7px;
-    margin-bottom: 40px;
+    padding: 30px;
 }
 
 .details .links {
@@ -104,14 +103,16 @@ body {
 @media (max-width: 767px) {
     .details .title {
         font-size: 45px;
-    }
+        margin-bottom: 15px;
+}
 
     .details .sub-title{
         font-size: 15px;
     }
 
-    .details{
+    .details {
         padding-top: 50px;
+        padding-bottom: 30px;
     }
 }
 
@@ -122,7 +123,7 @@ body {
 }
 
 .colour-overlay {
-    display: block;
+    display: none;
     z-index: 200;
    position: absolute;
    top: 0;
@@ -140,14 +141,12 @@ body {
    left: 0;
    right: 0;
 
-   background-image : url('./img/bg.jpg'); 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center;
+   background: url('./img/bg2.jpg') no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: 0% 80%;
 }
 
 .background img {
