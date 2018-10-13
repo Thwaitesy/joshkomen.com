@@ -39,13 +39,11 @@ body {
 .details {
     position: relative;
     z-index: 300;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
-    padding-bottom: 500px;
 }
 
 .details .title {
-    display: none;
     color: white;
     font-size: 50px;
     margin-bottom: 50px;
@@ -54,18 +52,16 @@ body {
 }
 
 .details .sub-title{
-    max-width: 550px;
+    max-width: 500px;
     font-size: 17px;
     margin: 0 auto;
     color:#fefefe;
     padding: 7px;
-    text-transform: uppercase;
-    font-style: italic;
+    margin-bottom: 40px;
 }
 
 .details .links {
-    display: none;
-    margin: 45px;
+    margin-bottom: 30px;
 }
 
 .details .links a{
@@ -86,7 +82,7 @@ body {
 }
 
 .details .links a:hover{
-    background: #535358;
+    background:  #636391;
     color: #fff;
     box-shadow: 0 0 1px 7px rgba(9, 36, 219, 0.15);
 }
@@ -127,13 +123,14 @@ body {
 }
 
 .colour-overlay {
+    display: block;
     z-index: 200;
    position: absolute;
    top: 0;
    bottom: 0;
    left: 0;
    right: 0;
-    background-color:  rgba(0, 0, 0, 0.40);
+    background-color: #4a4a7c;
 }
 
 .background {
