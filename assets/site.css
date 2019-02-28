@@ -141,7 +141,7 @@ body {
    left: 0;
    right: 0;
 
-   background: url('./img/bg3.jpg') no-repeat center center fixed; 
+   background: url('./img/bg3-min.jpg') no-repeat center center fixed; 
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -210,8 +210,6 @@ box-shadow: 6px 7px 64px 11px rgba(0,0,0,0.23);
     opacity: .7;
 }
 
-
-
 .book-container .book-details h5 {
     font-style: italic;
     font-size: 15px;
@@ -219,15 +217,18 @@ box-shadow: 6px 7px 64px 11px rgba(0,0,0,0.23);
 
 .book-container .buttons {
     margin-top: 40px;
+}
+
+.buttons {
     color: white;
 }
 
-.book-container .buttons .button-block {
+.buttons .button-block {
     padding-right: 15px;
     display: inline-block;
 }
 
-.book-container .buttons .button-block .sub-text {
+.buttons .button-block .sub-text {
     font-size: 9px;
     display: block;
     /* font-style: italic; */
@@ -237,7 +238,7 @@ box-shadow: 6px 7px 64px 11px rgba(0,0,0,0.23);
     text-transform: uppercase;
 }
 
-.book-container .buttons a {
+.buttons a {
     display: inline-block;
     padding: 12px;
     width: 120px;
@@ -251,23 +252,24 @@ box-shadow: 6px 7px 64px 11px rgba(0,0,0,0.23);
     box-shadow: 6px 7px 64px 11px rgba(0,0,0,0.23);
 }
 
-.book-container .buttons .btn:hover {
+.buttons .btn:hover {
     border-color: white;
+    background-color: #000109;
 }
 
-.book-container .buttons .btn:active {
+.buttons .btn:active {
     background-color: #000109;
     border-color: #000109;
     box-shadow: none;
 }
 
-.book-container .buttons .btn:active:focus {
+.buttons .btn:active:focus {
     background-color: #000109;
     border-color: #000109;
     box-shadow: none;
 }
 
-.book-container .buttons .btn:focus {
+.buttons .btn:focus {
     background-color: #000109;
     border-color: #000109;
     box-shadow: none;
@@ -293,6 +295,19 @@ box-shadow: 6px 7px 64px 11px rgba(0,0,0,0.23);
     margin-top: 50px;
 }
 
+.timeline .media-stuff .buttons {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.timeline .media-stuff .buttons a {
+    width: 220px;
+}
+.timeline .media-stuff .buttons .button-block {
+    padding: 15px;
+}
+
 @media (max-width: 767px) {
     .timeline {
         margin-top: 50px;
@@ -310,8 +325,8 @@ box-shadow: 6px 7px 64px 11px rgba(0,0,0,0.23);
     }
 
     .book-container .buttons {
-text-align: center;
-margin-top: 50px;
+        text-align: center;
+        margin-top: 50px;
     }
 
     .book-container .book-details {
