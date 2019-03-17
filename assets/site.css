@@ -378,3 +378,17 @@ box-shadow: 6px 7px 64px 11px rgba(0,0,0,0.23);
 .timeline .item.text .content {
     font-size: 18px;
 }
+
+#quote {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #cecdcd;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    #quote {
+        text-align: center;
+    }
+}
